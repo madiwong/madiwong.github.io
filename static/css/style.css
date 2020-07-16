@@ -1,0 +1,424 @@
+/*General*/
+
+@font-face {
+	font-family: custom;
+	src: url(../fonts/Avenir/AvenirLTStd-Book.otf);
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: custom;
+	font-size: 11pt;
+	letter-spacing: 2px;
+	color: #3d3d5c;
+	padding-bottom: 40px;
+}
+
+div {
+	float: center;
+	margin: 0px;
+}
+
+a {
+	color: #3d3d5c;
+	text-decoration: underline;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+a:hover {
+	color: #33334d;
+}
+
+h1, h2, h3, h4 {
+	margin: none;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 30pt;
+}
+
+h4 {
+	font-size: 14pt;
+}
+
+p {
+	font-size: 12pt;
+	letter-spacing: 1px;
+}
+
+ul {
+	display: block;
+}
+
+.ul1 {
+	list-style-type: square;
+}
+
+.ul2 {
+	list-style-type: circle;
+	text-transform: none;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -30px;
+}
+
+.container {
+	max-width: 1000px;
+	padding: 40px 40px;
+}
+
+.container-fluid {
+	float: center;
+	width: 100%;
+}
+
+.fixed-top {
+	background-color: #ffffff;
+}
+
+.img {
+	-webkit-transition: position 2s;
+	transition: position 2s;
+}
+
+.img-responsive {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+}
+
+.image {
+	max-width: 600px;
+}
+
+/*Heading and Navigation*/
+
+.nav {
+	float: right;
+	text-align: center;
+}
+
+.nav a {
+	margin: 24px 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #8585ad;
+	-webkit-transition: letter-spacing 1s, color 1s;
+	transition: letter-spacing 1s, color 1s;
+}
+
+.nav a:hover {
+	color: #5c5c8a;
+	letter-spacing: 2.5px;
+}
+
+.nav a.active {
+	color: #3d3d5c;
+	font-weight: bold;
+}
+
+button {
+	margin: 12px 24px;
+	padding: 10px 14px;
+	background: none;
+	border: 2px solid #8585ad;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #8585ad;
+	letter-spacing: 2px;
+}
+
+button:hover {
+	cursor: pointer;
+	border: 2px solid #5c5c8a;
+	color: #5c5c8a;
+}
+
+button:focus {
+	outline: none;
+}
+
+.logobutton {
+	margin: 12px 24px;
+	padding: 0px 0px;
+	border: none;
+	-webkit-transition: filter 0.5s;
+	transition: filter 0.5s;
+}
+
+.logobutton:hover {
+	border: none;
+	cursor: pointer;
+	filter: brightness(75%);
+}
+
+.colorbutton:hover {
+	background: #8585ad;
+	border: 2px solid #8585ad;
+	color: white;
+}
+
+#navbars {
+	margin: 0px 0px;
+	cursor: pointer;
+	display: block;
+}
+
+#xsymbol {
+	font-size: 24px;
+	display: none;
+}
+
+.bar {
+	width: 24px;
+	height: 2px;
+	background-color: #8585ad;
+	margin: 6px 0px;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+.dropbtn {
+	align-self: right;
+	margin: 18px 24px;
+	padding: 0px 0px;
+	background: none;
+	border: none;
+}
+
+.dropbtn:hover {
+	border: none;
+}
+
+.dropbtn:hover .bar {
+	background-color: #5c5c8a;
+}
+
+#menurow {
+	display: none;
+}
+
+.dropmenu {
+	text-align: right;
+	padding: 12px 24px;
+}
+
+.dropitem {
+	color: #8585ad;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: letter-spacing 1s;
+	transition: letter-spacing 1s;
+}
+
+.dropitem:hover {
+	color: #5c5c8a;
+	text-decoration: none;
+	letter-spacing: 2.5px;
+}
+
+.dropitem.active {
+	color: #3d3d5c;
+	font-weight: bold;
+}
+
+/*Footer*/
+
+.footer {
+	height: 30px;
+}
+
+p.footer {
+	font-size: 12px;
+}
+
+a.footerlink {
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: letter-spacing 0.5s, color 0.5s;
+	transition: letter-spacing 0.5s, color 0.5s;
+}
+
+a.footerlink:hover {
+	color: #8585ad;
+	letter-spacing: 2px;
+}
+
+/*Website Body*/
+
+/*Home*/
+
+#loadbackground {
+	display: none;
+}
+
+#index {
+	height: 100%;
+}
+
+#indexpage {
+	background-color: #ffffff;
+	background-image: url("../files/pianohands.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#indexhead {
+	background: none;
+}
+
+#indexheadsmall {
+	background: none;
+}
+
+#indexhomelogo {
+	filter: brightness(175%);
+}
+
+#indexhomelogo:hover {
+	filter: brightness(150%);
+}
+
+#welcomesplash {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#welcome {
+	font-size: 8vw;	
+}
+
+.welcomelink {
+	letter-spacing: 0.75vw;
+	text-decoration: none;
+	color: #9494b8;
+	-webkit-transition: letter-spacing 1s;
+	transition: letter-spacing 1s;
+}
+
+.welcomelink:hover {
+	letter-spacing: 1vw;
+	text-decoration: none;
+	color: #7575a3;
+}
+
+#welcomesubtitle {
+	font-size: 18px;
+	font-weight: lighter;
+	letter-spacing: 0.5vw;
+	color: #7575a3;
+	-webkit-transition: letter-spacing 1s;
+	transition: letter-spacing: 1s;
+}
+
+#indexfooter {
+	display: none;
+}
+
+/*About*/
+
+#aboutpic {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+
+/*Academic*/
+
+#semesters {
+	text-transform: uppercase;
+}
+
+/*Music*/
+
+#pianopic {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+#choralpic {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+/*Contact*/
+
+.contactbutton {
+	color: #3d3d5c;
+	border-color: #3d3d5c;
+}
+
+.contactbutton:hover {
+	color: #8585ad;
+	border-color: #8585ad;
+}
+
+.socialbutton {
+	color: #e0e0eb;
+	font-size: 20px;
+	margin: 0px 0px;
+	padding: 10px 14px;
+	border: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	-webkit-transition: letter-spacing 1s, color 1s;
+	transition: letter-spacing 1s, color 1s;
+}
+
+.socialbutton:hover {
+	color: #9494b8;
+	margin: 0px 0px;
+	padding: 10px 14px;
+	border: none;
+	letter-spacing: 2.5px;
+}
+
+.socialbutton:hover .btnimage {
+	filter: brightness(20%);
+}
+
+.imagebutton {
+	position: relative;
+	text-align: center;
+}
+
+.btnimage {
+	filter: brightness(40%);
+	-webkit-transition: filter 0.5s;
+	transition: filter 0.5s;
+}
+
+.imagelabel {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#instagramphoto {
+	width: 200px;
+	height: auto;
+}
+
+#youtubephoto {
+	width: 200px;
+	height: auto;
+}
+
+

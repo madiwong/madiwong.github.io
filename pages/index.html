@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Madeline Wong</title>
+	<link rel="icon" type="image/png" href="../static/files/icon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body id="indexpage">
+	<img id="loadbackground" src="../static/files/pianohands.jpg">
+	<div class="wrapper">
+	<!-- heading and navigation -->
+	<!-- on desktop -->
+	<div class="container-fluid fixed-top d-none d-md-block" id="indexhead">
+		<div class="row justify-content-between">	
+			<div class="align-items-center">
+				<button class="logobutton" id="indexhomelogo" onclick="location.href='./index.html'"><img src="../static/files/logo.png" width="40px"></button>
+			</div>
+			<div>
+				<div class="nav">
+					<a href="./about.html">About</a>
+					<a href="./academic.html">Academic</a>
+					<a href="./music.html">Music</a>
+					<a href="./contact.html">Contact</a>
+					<button id="resumebutton" onclick="location.href='../static/files/resume.pdf'">Resume</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- on small windows and screens -->
+	<div class="container-fluid fixed-top d-md-none" id="indexheadsmall">
+		<div class="row justify-content-between">
+			<div class="align-items-center">
+				<button class="logobutton" id="indexhomelogo" onclick="location.href='./index.html'"><img src="../static/files/logo.png" width="40px"></button>
+			</div>
+
+			<div class="align-items-right">
+				<button class="dropbtn" onclick="showmenu()">
+					<div id="navbars">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+					<div id="xsymbol">&#x2715;</div>
+				</button>
+			</div>			
+		</div>
+		<div class="row" id="menurow">
+			<div class="col align-self-end dropmenu">
+				<a class="dropitem" href="./about.html">About</a><br>
+				<a class="dropitem" href="./academic.html">Academic</a><br>
+				<a class="dropitem" href="./music.html">Music</a><br>
+				<a class="dropitem" href="./contact.html">Contact</a><br>
+				<a class="dropitem" href="../static/files/resume.pdf">Resume</a>
+			</div>
+		</div>
+	</div>
+	<!-- end heading and navigation -->
+
+	<div class="container-fluid" id="welcomesplash">
+		<div class="col justify-content-center" id="welcomesplash">
+			<div>
+				<br><br>
+				<a href="./about.html" class="welcomelink"><h2 id="welcome" onmouseover="changesubtitle(true)" onmouseleave="changesubtitle(false)">Madeline Wong</h2></a>
+				<br>
+				<p class="d-none d-md-block" id="welcomesubtitle">Student. Engineer. Musician.</p>
+			</div>
+		</div>
+	</div>
+
+	</div> <!-- end of wrapper -->
+
+	<!-- footer -->
+	<div class="container footer" id="indexfooter">
+		<div class="row justify-content-center">
+			<p class="footer"><a class="footerlink" href="mailto:mmwong@mit.edu">Email</a> | <a class="footerlink" href="www.linkedin.com/in/madeline-wong-20474215b">LinkedIn</a></p>
+		</div>
+	</div>
+	<!-- end footer -->
+
+	<script src="../static/templates/scripts.js"></script>
+
+</body>
+
+</html>
