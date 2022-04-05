@@ -421,4 +421,30 @@ a.footerlink:hover {
 	height: auto;
 }
 
+/*Beatty*/
+
+.beattybutton {
+	font-size: 12px;
+	color: #3d3d5c;
+	border-color: #3d3d5c;
+}
+
+.beattybutton:hover {
+	color: #8585ad;
+	border-color: #8585ad;
+}
+
+.beattyheading {
+	font-style: italic;
+}
+
+.beattysubtitle {
+	text-align: center;
+}
+
+.tableheading {
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+}
 
